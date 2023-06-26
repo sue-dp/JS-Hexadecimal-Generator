@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Hexadecimal Assignment</title>
+    
+    <script src="./index.js"></script>
+    <link rel="stylesheet" href="./styles.css"></link>
+  </head>
+  <body>
+    <div class="container" id="container">
+      <div class="header" id="header">
+        <h1>Hexadecimal Generator</h1>
+      </div>
+
+      <div class="hex-container" id="hex-container">
+        
+        <div class="hex-text1" id="hex-text1">
+          <p>This Color is <span id="secondHex"></span></p>
+        </div>
+
+        <div class="hex-generator" id="hex-generator">
+          <div class="hex-text2" id="hex-text2">
+            <p>This Color is <span id="firstHex"></span></p>
+          </div>
+
+          <button
+          class="hex-button"
+          id="hex-button"
+          onclick="replaceColor()"
+          >
+            Click to Generate a Random Hexadecimal
+          </button>
+        </div>
+      </div>
+    </div>
+    <script>
+      displayVariables(firstHex,secondHex)
+    </script>
+  </body>
+</html>
